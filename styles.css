@@ -1,0 +1,145 @@
+/*PRE-WRITTEN LESSON STYLES*/
+
+html {
+    box-sizing: border-box;
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma,
+      Sans-Serif;
+    font-weight: normal;
+    color: #272727;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: normal;
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+
+  /*CUSTOM STYLES / PROGRAMMER STYLES */
+
+  :root {
+      --header-black: #1E1F26;
+      --background-black: #131417;
+      --code-background: #2A2734;
+      --code-header: #26232F;
+      --button-background: #5A5F73;
+      --button-green: #47CF73;
+  }
+
+  .button {
+    color: white;
+    background-color: var(--button-background);
+    border: none;
+    font: inherit;
+    border-radius: 10px;
+    padding: 1em;
+    }
+    .button--small {
+        font-size: .8rem;
+        padding: .2em;
+        border-radius: 5px;
+    }
+
+  /*MAIN*/
+
+  .codepen {
+      display: grid;
+      grid-template-rows: auto 1fr 1fr auto;
+      height: 100vh;
+      background-color: var(--background-black);
+      color: white;
+  }
+
+  .pen {
+      background-color: var(--header-black);
+      padding: .5rem;
+      
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      align-items: center;
+      grid-auto-flow: column;
+  }
+
+  .code {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+  }
+
+  .preview {
+      display: grid;
+      grid-template-rows: 1fr;
+  }
+
+  /*HEADER*/
+
+  .pen__author {
+      margin-bottom: 0;
+  }
+
+  /*CODE*/
+
+  .editor {
+    background-color: var(--code-background);
+    margin: 0 0 1rem 1rem;
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
+  
+  .editor__header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: .5rem;
+    padding: .5rem;
+    align-items: center;
+    background-color: var(--code-header);
+  }
+
+    .editor__code {
+     margin: 0 1em;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: .5rem;
+  }
+.editor__gutter {
+    color: #545157;
+}
+.editor__input {
+  resize: none;
+  background: none;
+  background-color: inherit;
+  font: inherit;
+  outline: none;
+  color: inherit;
+  border: none;
+  line-height: 1.5rem;
+
+  height: 100%;
+}
+
+ /*FOOTER*/
+
+ .settings {
+     padding: .2rem;
+ }
